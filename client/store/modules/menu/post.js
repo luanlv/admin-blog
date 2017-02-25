@@ -11,6 +11,15 @@ export default {
       name: 'Category',
       path: '/post/category',
       component: lazyLoading('post/Category')
+    },
+    {
+      name: 'Article',
+      path: '/post/article',
+      component: lazyLoading('post/Article')
+    },
+    {
+      path: '/post/article/:id',
+      component: lazyLoading('post/EditArticle')
     }
   ]
 }
